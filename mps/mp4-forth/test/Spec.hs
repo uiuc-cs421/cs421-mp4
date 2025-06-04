@@ -11,6 +11,8 @@ import Lib
 main :: IO ()
 main = defaultMain tests
 
+tags = tag1 + tag2 + tag3
+
 tests =
   [ testGroup "=G= Lifter Functions"
       [ testProperty "=P= Lift Comparison (5 points)"             prop_liftComp

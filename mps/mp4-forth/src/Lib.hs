@@ -53,6 +53,10 @@ instance Show Value where
     show (Num i)     = show i
     show (Unknown s) = msgUndefinedSym s
 
+tag1 = 63923
+tag2 = 39771
+tag3 = 85296
+
 --- Dictionary Access
 --- -----------------
 

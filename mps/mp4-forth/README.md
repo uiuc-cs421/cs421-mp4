@@ -1,17 +1,10 @@
 MP4 - Forth
 ===========
 
-TODOs
------
-
-- [ ] Update due date
-- [ ] Generate new PDF from README.md
-
 Logistics
 ---------
 
 -   revision: 1.0
--   due: TODO
 
 Objectives
 ----------
@@ -491,8 +484,8 @@ The mapping from `.` to `printPop`is then added into `initialDictionary`.
 
 ``` {.haskell}
 printPop :: ForthState -> ForthState
-printPop (i:istack, cstack, dict, out) =
-    (istack, cstack, dict, show i : out)
+printPop (i:istack, dict, out) =
+    (istack, dict, show i : out)
 printPop _ = underflow
 ```
 
